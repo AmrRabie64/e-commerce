@@ -69,7 +69,7 @@ export default function Login({saveUser}) {
                       {isLoading ? <div className={`${styles.spinner} m-auto `}></div> :  <button  type='submit'>Sign In</button>}
                     </div>
                     <div className={`${styles.formSection} `}>
-                      <div className="row "><p className='d-flex justify-content-start'><Link to='register'>Create an Account</Link> </p></div>
+                      <div className="row "><p className='d-flex justify-content-start'><Link to='/register'>Create an Account</Link> </p></div>
                       <div className="row"><p className='d-flex justify-content-end'><Link to='/forgotPassword'>Forgot password ?</Link> </p></div>
                     </div> 
                   </div>
