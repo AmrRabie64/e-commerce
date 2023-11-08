@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/e-commerce/static/css/main.f5e0fd33.css",
+    "main.js": "/e-commerce/static/js/main.657ecafa.js",
+    "static/js/787.46493d11.chunk.js": "/e-commerce/static/js/787.46493d11.chunk.js",
+    "static/media/fa-solid-900.ttf": "/e-commerce/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/fa-brands-400.ttf": "/e-commerce/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/e-commerce/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/error.svg": "/e-commerce/static/media/error.084f5f5b0eb10d3216cb7c939108e1f6.svg",
+    "static/media/fa-brands-400.woff2": "/e-commerce/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/fa-regular-400.ttf": "/e-commerce/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/fa-regular-400.woff2": "/e-commerce/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/freshcart-logo.svg.svg": "/e-commerce/static/media/freshcart-logo.svg.53f7a424c3aedc30a0fb46dc2278137c.svg",
+    "static/media/fa-v4compatibility.ttf": "/e-commerce/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/e-commerce/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "static/media/slick.svg": "/e-commerce/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/e-commerce/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/e-commerce/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/e-commerce/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/e-commerce/index.html",
+    "main.f5e0fd33.css.map": "/e-commerce/static/css/main.f5e0fd33.css.map",
+    "main.657ecafa.js.map": "/e-commerce/static/js/main.657ecafa.js.map",
+    "787.46493d11.chunk.js.map": "/e-commerce/static/js/787.46493d11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5e0fd33.css",
+    "static/js/main.657ecafa.js"
+  ]
+}
