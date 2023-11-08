@@ -1,0 +1,85 @@
+.ProudctDetails {}
+
+.button {
+   
+    /* background-color: #132233; */
+    height: 40px;
+    border: 2px solid ;
+    color: #eee;
+    transition: .6s;
+    font-size: 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    overflow: hidden;
+  }
+  
+  .button span {
+    transform: translateX(10px);
+    transition: .5s;
+  }
+  
+  .button svg {
+    transform: translateX(-500px);
+    transition: .6s;
+    z-index: 3;
+    height: 20px;
+  }
+  
+  .button:hover {
+    width: 60px;
+    background-color: rgba(51, 34, 51, 0.815);
+    box-shadow: 20px 20px 96px #bebebe,-20px -20px 96px #ffffff;
+  }
+  
+  .button:hover svg {
+    transform: translateX(-5px);
+  }
+  
+  .button:hover span {
+    transform: translateY(70px);
+    font-size: .1rem;
+  }
+
+
+
+  /* S P I N E E E R */
+
+
+  .spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-color: #dbdcef #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+}
+
+.spinner::before {
+    border-color: #474bff #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+
+.spinner::after {
+    margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+    100% {
+        transform: rotate(1turn);
+    }
+}

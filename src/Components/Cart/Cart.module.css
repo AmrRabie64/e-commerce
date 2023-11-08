@@ -1,0 +1,293 @@
+.Cart {}
+
+.main_div_plus {
+    --color: green;
+    position: relative;
+    z-index: 1;
+   }
+   .main_div_minus {
+    --color: red;
+    position: relative;
+    z-index: 1;
+   }
+   
+   .main_div_plus::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: -7px;
+    left: -7px;
+    z-index: -5;
+    border-top: 3px solid var(--color);
+    border-left: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div_plus::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    bottom: -7px;
+    right: -7px;
+    z-index: -5;
+    border-right: 3px solid var(--color);
+    border-bottom: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div_plus:hover::before {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .main_div_plus:hover::after {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .main_div_plus button {
+    padding: 0.7em 2em;
+    font-size: 16px;
+    /* background: #222222; */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+   }
+   .main_div_minus::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: -7px;
+    left: -7px;
+    z-index: -5;
+    border-top: 3px solid var(--color);
+    border-left: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div_minus::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    bottom: -7px;
+    right: -7px;
+    z-index: -5;
+    border-right: 3px solid var(--color);
+    border-bottom: 3px solid var(--color);
+    transition: 0.5s;
+   }
+   
+   .main_div_minus:hover::before {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .main_div_minus:hover::after {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .main_div_minus button {
+    padding: 0.7em 2em;
+    font-size: 16px;
+    /* background: #222222; */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+   }
+
+
+   /* BTN REMOVEEE */
+
+   .btn_remove {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 5px .2px #00000035;
+    box-shadow: 1px 1px 5px .2px #00000035;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    transition-delay: .2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+  }
+  
+  .btn_remove:hover {
+    width: 150px;
+    transition-delay: .2s;
+  }
+  .paragraph {
+    /* color: black; */
+    visibility: hidden;
+    opacity: 0;
+    font-size: 18px;
+    margin: 0;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .btn_remove:hover > .paragraph {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+  }
+  
+  .btn_remove:hover > .icon_wrapper .icon {
+    transform: scale(1.1);
+  }
+  
+  .btn_remove:hover > .icon_wrapper .icon path {
+    stroke: rgb(243, 233, 233);
+  }
+  
+ 
+  
+  .icon_wrapper {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    transform: scale(.9);
+    transition: .2s linear;
+    stroke: black;
+  }
+  
+  .icon path {
+    stroke: #000;
+    stroke-width: 2px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+
+  /* Continuo button */
+
+  .continuo_button button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: rgb(9, 135, 219);
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+   }
+   
+   .continuo_button button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: green;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   .continuo_button button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+   }
+   
+   .continuo_button button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   .continuo_button button:hover span {
+    color: white;
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+   
+
+   
+  /* Spinner */
+  
+  .spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-color: #dbdcef #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+  }
+  
+  .spinner::before,
+  .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+  }
+  
+  .spinner::before {
+    border-color: #474bff #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+  }
+  
+  .spinner::after {
+    margin: 8.9px;
+  }
+  
+  @keyframes spinner-e04l1k {
+    100% {
+      transform: rotate(1turn);
+    }
+  }

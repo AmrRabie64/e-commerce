@@ -1,0 +1,9 @@
+.Categories {}
+
+.slick-next{
+    display: none !important ;
+}
+.slick-arrow , .slick-next{
+    display: none !important;
+}
+
