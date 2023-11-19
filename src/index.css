@@ -8,6 +8,7 @@
     --font-family:'Encode Sans Expanded', sans-serif;
     --rating-color:#ffc908;
     --nav-color:#ebc8c2;
+    --dark-nav-color:#cb9e96;
 }
 
 body{
@@ -61,4 +62,7 @@ a , a:hover{
 }
 .bg-nav-color{
     background-color: var(--nav-color) !important;
+}
+.bg-dark-nav-color{
+    background-color: var(--dark-nav-color) !important;
 }

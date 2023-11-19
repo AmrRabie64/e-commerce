@@ -75,14 +75,14 @@ export default function Cart() {
         </> : <>
           {cartDetails && cartDetails.data && <> <div className="container my-5 p-5 bg-main-light">
             {cartDetails.data.products.map((product) =>
-              <div key={product.product._id} className="row my-4 py-2 bg-light">
+              <div key={product.product._id} className="row my-5 py-2 bg-light">
                 <div className="col-md-1">
                   <img src={product.product.imageCover} className='w-100' alt="" />
                 </div>
                 <div className="col-md-11 d-flex justify-content-between align-items-center">
                   <div className="">
-                    <h4>{product.product.title}</h4>
-                    <p className='text h4 my-2'><span className='text-main'>EGP </span> {product.price}</p>
+                    <h4 className='mt-2'>{product.product.title}</h4>
+                    <p className='text h4 my-4'><span className='text-main'>EGP </span> {product.price}</p>
                     <div className="btn_Remove">
                       <button onClick={() => deleteCartHandle(product.product._id)} className={`${styles.btn_remove} bg-danger text-white`}>
                         <p className={`${styles.paragraph} ms-2`}>Remove</p>
@@ -115,8 +115,8 @@ export default function Cart() {
 
             )}
             <div className="row d-flex ">
-              <div className="col-md-4">
-                <h4>Total Price : {cartDetails.data.totalCartPrice} EGP</h4>
+              <div className="col-md-4 my-4">
+                <h4 className='text-success'>Total Price : {cartDetails.data.totalCartPrice} EGP</h4>
               </div>
             </div>
             <div className="row">

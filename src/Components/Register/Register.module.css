@@ -57,7 +57,9 @@
   
   .formSection a {
     font-weight: bold;
-    color: #0066ff;
+    /* color: #0066ff; */
+    color: #63a56d;
+
     transition: color .3s ease;
   }
   
@@ -68,7 +70,8 @@
   
   /*Button*/
   .form button {
-    background-color: #0066ff;
+    /* background-color: #0066ff; */
+    background-color: #63a56d; 
     color: #fff;
     border: 0;
     border-radius: 24px;

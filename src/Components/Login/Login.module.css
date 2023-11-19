@@ -55,20 +55,23 @@
     box-shadow: rgb(0 0 0 / 8%) 0 -1px;
   }
   
-  .formSection a {
+  .formSection Link {
     font-weight: bold;
-    color: #0066ff;
+    color: #63a56d;
+    
     transition: color .3s ease;
   }
   
   .formSection a:hover {
-    color: #005ce6;
+    color: #0066ff;
     text-decoration: underline;
+
   }
   
   /*Button*/
   .form button {
-    background-color: #0066ff;
+    /* background-color: #0066ff; */
+    background-color: #63a56d;    ;
     color: #fff;
     border: 0;
     border-radius: 24px;

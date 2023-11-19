@@ -51,11 +51,11 @@ export default function Login({saveUser}) {
     <>
     
       <div className="container">
-      <div className="row d-flex align-items-center justify-content-center text-center my-5">
+      <div className="row d-flex align-items-center justify-content-center text-center my-5 ">
           <div className="col-md-4">
-          <div className="register-form">
+          <div className="register-form ">
                 <form onSubmit={formik.handleSubmit}>
-                  <div className={`${styles.formBox}`}>
+                  <div className={`${styles.formBox} , bg-nav-color`}>
                     <div  className={`${styles.form}` }>
                       <span className={`${styles.title}`}>Log In</span>
                       {errorMessage ? <div className="alert alert-danger">{errorMessage}</div> : ''}
@@ -68,9 +68,9 @@ export default function Login({saveUser}) {
                       </div>
                       {isLoading ? <div className={`${styles.spinner} m-auto `}></div> :  <button  type='submit'>Sign In</button>}
                     </div>
-                    <div className={`${styles.formSection} `}>
-                      <div className="row "><p className='d-flex justify-content-start'><Link to='/register'>Create an Account</Link> </p></div>
-                      <div className="row"><p className='d-flex justify-content-end'><Link to='/forgotPassword'>Forgot password ?</Link> </p></div>
+                    <div className={`${styles.formSection} bg-dark-nav-color `}>
+                      <div className="row "><p className='d-flex justify-content-start'><Link className='text-decoration-none' to='/register'>Create an Account</Link> </p></div>
+                      <div className="row"><p className='d-flex justify-content-end'><Link className='text-decoration-none' to='/forgotPassword'>Forgot password ?</Link> </p></div>
                     </div> 
                   </div>
                 </form>

@@ -66,10 +66,10 @@ export default function Register() {
 
         </div> */}
         <div className="row d-flex align-items-center justify-content-center text-center my-5">
-          <div className="col-md-4">
-            <div className="register-form">
+          <div className="col-md-4 ">
+            <div className="register-form ">
               <form onSubmit={formik.handleSubmit}  >
-                <div className={`${styles.formBox}`}>
+                <div className={`${styles.formBox} bg-nav-color`}>
                   <div className={`${styles.form}`} >
                     <span className={`${styles.title}`}>Sign up</span>
                     {errorMessage ? <div className="alert alert-danger">{errorMessage}</div> : ''}
@@ -91,7 +91,7 @@ export default function Register() {
                     {/* <button  type='submit'>Sign up</button> */}
                     
                   </div>
-                  <div className={`${styles.formSection}`}>
+                  <div className={`${styles.formSection} bg-dark-nav-color`}>
                     <p>Have an account? <Link to='login'>Log in</Link> </p>
                   </div>
                 </div>  
